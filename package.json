@@ -8,12 +8,35 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
   "dependencies": {
     "@next/font": "13.1.6",
+    "@prisma/client": "^4.10.1",
+    "cookies-next": "^2.1.1",
+    "date-fns": "^2.29.3",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "formik": "^2.2.9",
+    "framer": "^2.3.0",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.28",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-auth-code-input": "^3.2.1",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-modal": "^3.16.1",
+    "sharp": "^0.31.3",
+    "sqlite3": "^5.1.4",
+    "swr": "^2.0.3",
+    "xlsx": "^0.18.5",
+    "zustand": "^4.3.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "prisma": "^4.10.1"
   }
 }

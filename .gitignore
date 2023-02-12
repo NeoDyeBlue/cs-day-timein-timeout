@@ -30,3 +30,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# excel folder
+/excel/
+
+#prisma dev.db
+/prisma/dev.db
