@@ -1,5 +1,5 @@
 import { successResponse, errorResponse } from "@/utils/response-utils";
-import { getAtendeePercentage } from "@/lib/controllers/student-controller";
+import { getAtendeePercentage } from "@/lib/models/student-model";
 
 export default async function handler(req, res) {
   try {

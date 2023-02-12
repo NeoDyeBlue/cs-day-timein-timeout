@@ -1,8 +1,5 @@
 import { successResponse, errorResponse } from "@/utils/response-utils";
-import {
-  findStudent,
-  getAllStudentLogs,
-} from "@/lib/controllers/student-controller";
+import { findStudent, getAllStudentLogs } from "@/lib/models/student-model";
 
 export default async function handler(req, res) {
   try {

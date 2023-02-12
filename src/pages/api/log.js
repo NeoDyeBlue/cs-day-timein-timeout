@@ -1,5 +1,5 @@
 import { successResponse, errorResponse } from "@/utils/response-utils";
-import { logStudent } from "@/lib/controllers/time-log-controller";
+import { logStudent } from "@/lib/models/time-log-controller";
 
 export default async function handler(req, res) {
   try {
