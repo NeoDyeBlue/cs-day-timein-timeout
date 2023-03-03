@@ -141,7 +141,7 @@ export default function Actions() {
           </div>
           <div
             className="z-50 mt-4 flex h-full w-full max-w-[800px] self-center
-          border-y border-dashed border-gray-400"
+          border-t border-dashed border-gray-400"
           >
             {!studentData?.timeLog?.timeIn || !studentData?.timeLog?.timeOut ? (
               <button
@@ -157,9 +157,13 @@ export default function Actions() {
                 {studentData?.timeLog?.timeIn ? "Time-out" : "Time-in"}
               </button>
             ) : (
-              <p className="m-auto text-center text-xl">
-                😄Thank you for your participation!
-              </p>
+              <div className="m-auto flex flex-col gap-4 text-center">
+                <p className="font-display text-2xl font-semibold">
+                  {format(new Date(studentData?.timeLog?.timeIn), "p")} -{" "}
+                  {format(new Date(studentData?.timeLog?.timeOut), "p")}
+                </p>
+                <p className="text-lg">😄Thank you for your participation!</p>
+              </div>
             )}
           </div>
         </div>

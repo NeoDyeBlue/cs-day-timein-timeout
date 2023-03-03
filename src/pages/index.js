@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import { toast } from "react-hot-toast";
 import { generatePDF } from "@/utils/pdf-utils";
 import { format } from "date-fns";
+import Link from "next/link";
 
 export default function Home() {
   const router = useRouter();
@@ -201,6 +202,15 @@ export default function Home() {
                 >
                   Login
                 </button>
+                <p className="mt-4 text-xs">
+                  Made with 💙 by{" "}
+                  <Link
+                    href="https://github.com/NeoDyeBlue"
+                    className="font-display font-medium text-[#3066be] hover:underline"
+                  >
+                    John Paul Zoleta
+                  </Link>
+                </p>
               </Form>
             </FormikProvider>
           </div>
