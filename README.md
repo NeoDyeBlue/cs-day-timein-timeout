@@ -22,6 +22,40 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Initialization
+
+### Project setup
+
+```sh
+npm install
+```
+
+### Database
+
+Create an 'excel' folder in the root directory.
+
+Include an excel file named 'students' in it. Make sure that the first sheet is the students data with columns id, firstName, lastName, year, and section.
+
+Create the database and run the seeder.
+
+1. create database
+
+```sh
+npx prisma migrate dev --name init
+```
+
+2. Run seeders
+
+```sh
+npx prisma db seed
+```
+
+To Drop the database and remove all the data (seeding skipped).
+
+```sh
+npx prisma migrate reset --skip-seed
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

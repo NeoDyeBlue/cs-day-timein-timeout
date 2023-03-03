@@ -3,7 +3,7 @@ const { PrismaClient } = require("@prisma/client");
 
 const prisma = new PrismaClient();
 
-const workbook = readFile("./excel/finallist.xlsx");
+const workbook = readFile("./excel/students.xlsx");
 const sheet = workbook.Sheets[workbook.SheetNames[0]];
 const students = utils.sheet_to_json(sheet);
 
