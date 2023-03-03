@@ -3,8 +3,8 @@ const { PrismaClient } = require("@prisma/client");
 
 const prisma = new PrismaClient();
 
-const workbook = readFile("./excel/bscs-org-students.xlsx");
-const sheet = workbook.Sheets[workbook.SheetNames[5]];
+const workbook = readFile("./excel/finallist.xlsx");
+const sheet = workbook.Sheets[workbook.SheetNames[0]];
 const students = utils.sheet_to_json(sheet);
 
 async function main() {
@@ -16,7 +16,7 @@ async function main() {
         id: student.id,
         firstName: student.firstName,
         lastName: student.lastName,
-        year: student.year,
+        year: Number(student.year),
         section: student.section,
       },
     });
